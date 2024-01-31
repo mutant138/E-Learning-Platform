@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coding Mutants</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <style>
+    body {
+  background-color: #f8f9fa; 
+}
+
+.navbar {
+  background-color: #3e91ea; 
+  padding: 1rem;
+}
+
+.navbar-brand {
+  color: #ff0000; 
+}
+
+.nav-link {
+  color: #965555; 
+}
+
+.nav-link:hover {
+  color: #000000; 
+}
+
+.modal-content {
+  background-color: #ffffff; 
+}
+
+.modal-header {
+  background-color: #007bff; 
+  color: #ffffff; 
+}
+
+.modal-footer {
+  background-color: #f8f9fa; 
+}
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+      <div class="container-fluid">
+        <h2>Coding Mutants</h2>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+            data-bs-toggle="modal" data-bs-target="#signup">Signup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+            data-bs-toggle="modal" data-bs-target="#login" href="$" >Login </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Signup modal-->
+<div class="modal fade" id="signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Signup</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="name" placeholder="John Doe">
+          <label for="name">Username</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          <label for="email">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Create Account</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--login modal-->
+<div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fuga, atque aperiam eaque excepturi soluta sed nisi maxime at, aspernatur dolorum, vitae perspiciatis voluptate? Consequatur enim ipsa voluptas temporibus inventore.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+  <img src="https://picsum.photos/id/1/200/300" alt="404 Error" class="img-fluid" style="max-width: 50%;">
+  <h1 class="mt-4">404 - User Not Found</h1>
+  <p class="lead">Kindly Signup or login to access the website</p>
+</div>
+
+<footer class="bg-warning bg-opacity-100 py-4 fixed-bottom text-black">
+  <div class="container text-center">
+    <p>&copy; Udhayasurya. All rights reserved.</p>
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
